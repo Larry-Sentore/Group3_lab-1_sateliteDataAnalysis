@@ -2,7 +2,7 @@
 
 input_file="raw_data/satelite_temperature_data.csv"
 humidity_output="analyzed_data/humidity_data_Kenya.csv"
-number_output="results.txt"
+number_output="analyzed_data/highest_temp.csv"
 
 grep "Kenya" "$input_file" | sort -t, -k4 -nr > "$humidity_output"
 echo "Humidity data for Kenya has been saved to $humidity_output"
